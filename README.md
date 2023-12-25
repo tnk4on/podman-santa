@@ -1,5 +1,6 @@
 # Podman Santa(Ascii Art)
 This container image converts a PNG image to "Ascii Art" and displays it in the terminal.
+- Git Repo:[https://github.com/tnk4on/podman-santa](https://github.com/tnk4on/podman-santa)
 
 Original PNG image
 ![](santaseal.png)
@@ -16,7 +17,7 @@ jp2a is a simple JPEG/PNG to ASCII converter.
 
 Command example
 ```
-jp2a --colors --fill --color-depth=24 --chars="podman" santaseal.png  --width=120
+jp2a --colors --fill --color-depth=24 --chars="podman" santaseal.png --width=120
 ```
 
 ## Original PNG image
