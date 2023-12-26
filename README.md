@@ -42,7 +42,7 @@ cd podman-santa
 podman build -t quay.io/tnk4on/podman-santa .
 ```
 
-for adm64(x86_64)
+for amd64(x86_64)
 ```
 export ARCH=amd64
 podman build --build-arg ARCH=${ARCH} --platform linux/${ARCH} -t test:${ARCH} .
