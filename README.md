@@ -35,8 +35,15 @@ podman run --rm -t quay.io/tnk4on/podman-santa --width=200
 ```
 
 ## Build
+Default architecture is arm64(aarch64)
 ```
 git clone https://github.com/tnk4on/podman-santa.git
 cd podman-santa
 podman build -t quay.io/tnk4on/podman-santa .
+```
+
+for adm64(x86_64)
+```
+export ARCH=amd64
+podman build --build-arg ARCH=${ARCH} --platform linux/${ARCH} -t test:${ARCH} .
 ```
